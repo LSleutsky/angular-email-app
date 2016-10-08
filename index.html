@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html ng-app="emailClient">
+  <html>
     <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +16,8 @@
       <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-      <!-- *************** JS *************** -->
-      <!-- bootstrap -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
       <!-- modernizr -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
       <!-- legacy IE support for HTML5 elements and media queries -->
       <!--[if lt IE 9]>
            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -30,18 +26,27 @@
 
       <title>Angular Email Client</title>
     </head>
-    <body>
+    <body ng-app="EmailClient">
+      <header class="header">
+        <div class="header-text">
+          <p>AngularJS Email Client -- <span>Lush Sleutsky</span></p>
+        </div>
+      </header>
+      
+      <div ng-view></div>
 
       <!-- jQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <!-- angular -->
-      <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+      <!-- angular js -->
+      <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
       <!-- angular route -->
-      <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
-      <!-- external app files -->
+      <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+      <!-- external js files -->
       <script src="js/app.js"></script>
       <script src="js/controllers/InboxCtrl.js"></script>
-      <script src="js/controllers/EmailCtrl.js"></script>
+      <!-- <script src="js/controllers/EmailCtrl.js"></script> -->
       
     </body>
   </html>
