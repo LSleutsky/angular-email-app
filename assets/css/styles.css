@@ -1,1 +1,26 @@
 /* custom font: "Varela Round", sans-serif */
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.header {
+  padding: 20px 0 5px 0;
+  text-align: center;
+  color: #ffffff;
+  background: #000000;
+  box-shadow: 0px 10px 10px #777778;
+  font-size: 2em; 
+}
+
+.header-text span {
+  color: #ff0000;
+  font-weight: 900
+}
+
+.title {
+  text-align: center;
+  margin-top: 25px;
+  color: #0000ff;
+  font-weight: 600;
+}
