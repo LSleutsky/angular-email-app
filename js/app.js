@@ -1,0 +1,19 @@
+// main app: EmailClient
+
+angular.module('EmailClient', [
+  'ngRoute'
+])
+
+.config(function($routeProvider) {
+  'use strict';
+  $routeProvider
+    .when('/inbox', {
+      templateUrl: 'views/inbox.html',
+      controller: 'InboxCtrl',
+      controllerAs: 'inbox'
+    })
+    .otherwise({
+      redirectTo: '/inbox'
+    });
+
+});
