@@ -2,8 +2,11 @@
 
 angular.module('EmailClient')
 
-.controller('InboxCtrl', function InboxCtrl() {
-  'use strict';
-  this.title = "My Inbox";
+.controller('InboxCtrl', function InboxCtrl($scope, InboxFactory) {
+  
+  $scope.title = "My Inbox";
+  InboxFactory.getEmails().success(function(data) {
+    debugger;
+  });
   
 });
