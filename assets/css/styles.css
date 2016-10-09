@@ -5,22 +5,27 @@ body {
 }
 
 .header {
-  padding: 20px 0 5px 0;
+  padding-bottom: 10px;
   text-align: center;
-  color: #ffffff;
   background: #000000;
-  box-shadow: 0px 10px 10px #777778;
-  font-size: 2em; 
+  box-shadow: 0px 7px 10px #777777;
+  font-size: 3.5em;
 }
 
-.header-text span {
-  color: #ff0000;
-  font-weight: 900
+.header-text p {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.header-text p:last-child {
+  font-size: .3em;
+  color: #888888;
 }
 
 .title {
   text-align: center;
-  margin-top: 25px;
-  color: #0000ff;
-  font-weight: 600;
+  color: #ff0000;
+  text-shadow: 1px 1px 1px #333333;
+  font-weight: 900;
+  font-size: 2.5em;
 }
