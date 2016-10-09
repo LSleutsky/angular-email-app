@@ -5,12 +5,11 @@ angular.module('EmailClient', [
 ])
 
 .config(function($routeProvider) {
-  'use strict';
+  
   $routeProvider
     .when('/inbox', {
       templateUrl: 'views/inbox.html',
-      controller: 'InboxCtrl',
-      controllerAs: 'inbox'
+      controller: 'InboxCtrl'
     })
     .otherwise({
       redirectTo: '/inbox'
