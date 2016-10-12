@@ -1,12 +1,9 @@
 // inbox controller: InboxCtrl
 
-angular.module('EmailClient')
-
-.controller('InboxCtrl', function InboxCtrl($scope, InboxFactory) {
+angular
+  .module('EmailClient')
+  .controller('InboxCtrl', function InboxCtrl($scope) {
   
-  $scope.title = "My Inbox";
-  // InboxFactory.getEmails().success(function(data) {
-  //   debugger;
-  // });
+    $scope.title = "My Inbox";
   
-});
+  });
