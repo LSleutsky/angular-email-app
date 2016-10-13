@@ -1,8 +1,7 @@
 // inbox directive: inbox
 
 angular
-  .module('EmailClient')
-  .directive('inbox', function InboxDirective() {
-  
-  
-  });
+    .module('EmailClient')
+    .directive('inbox', function InboxDirective() {
+        'use strict';
+    });

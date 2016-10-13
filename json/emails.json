@@ -1,44 +1,44 @@
 [
-  {
-    "from": "Mike Smith",
-    "date": 1475937234,
-    "subject": "Lunch meeting with new clients",
-    "id": 1
-  },
-  {
-    "from": "Google",
-    "date": 1372700916,
-    "subject": "Please confirm your new Google mail address",
-    "id": 2
-  },
-  {
-    "from": "Apple",
-    "date": 1448794101,
-    "subject": "Receipt for new iPhone purchase",
-    "id": 3
-  },
-  {
-    "from": "GitHub",
-    "date": 1475713951,
-    "subject": "New repo 'angular-email-client' created",
-    "id": 4
-  },
-  {
-    "from": "Lisa Jones",
-    "date": 1451871167,
-    "subject": "Birthday party coming up!",
-    "id": 5
-  },
-  {
-    "from": "Microsoft",
-    "date": 1433175609,
-    "subject": "New changes to Hotmail accounts",
-    "id": 6
-  },
-  {
-    "from": "JavaScript Weekly",
-    "date": 1468412294,
-    "subject": "New features in ES6",
-    "id": 7
-  }
+    {
+        "from": "Mike Smith",
+        "date": 1475937234,
+        "subject": "Lunch meeting with new clients",
+        "id": 1
+    },
+    {
+        "from": "Google",
+        "date": 1372700916,
+        "subject": "Please confirm your new Google mail address",
+        "id": 2
+    },
+    {
+        "from": "Apple",
+        "date": 1448794101,
+        "subject": "Receipt for new iPhone purchase",
+        "id": 3
+    },
+    {
+        "from": "GitHub",
+        "date": 1475713951,
+        "subject": "New repo 'angular-email-client' created",
+        "id": 4
+    },
+    {
+        "from": "Lisa Jones",
+        "date": 1451871167,
+        "subject": "Birthday party coming up!",
+        "id": 5
+    },
+    {
+        "from": "Microsoft",
+        "date": 1433175609,
+        "subject": "New changes to Hotmail accounts",
+        "id": 6
+    },
+    {
+        "from": "JavaScript Weekly",
+        "date": 1468412294,
+        "subject": "New features in ES6",
+        "id": 7
+    }
 ]
