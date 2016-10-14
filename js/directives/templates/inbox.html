@@ -3,7 +3,7 @@
     <div class="search_bar">
         <!-- how many emails in inbox-->
         <div class="inbox_count">
-            <p>You have {{inbox.messages.length && inbox.messages.length || 'no'}} inbox messages.</p>
+            <p>You have {{inbox.messages.length && inbox.messages.length || 'no'}} inbox messages</p>
         </div>
         <div ng-hide="!inbox.messages.length">
             <input type="text" name="search_box" class="search_box" placeholder="Search by sender..." ng-model="inbox.search">
