@@ -2,12 +2,19 @@
 
 angular
     .module('EmailClient')
-    .factory('InboxFactory', function InboxFactory($http) {
+    .factory('InboxFactory', function InboxFactory($q, $http) {
         'use strict';
-        return {
-            getEmails: function() {
-                return $http.get('json/emails.json');
-            }
+        
+        var externals = {};
+        externals.messages = [];
+        
+        externals.getEmails = function() {
+            // when response is obtained
+            return $http.get('json/emails.json')
+                .success(function(data) {
+                    // add response data to messages array
+                    externals.messages = data;
+                });
         };
-
+        return externals;
     });
