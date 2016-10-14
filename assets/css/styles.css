@@ -4,12 +4,13 @@ body {
     font-family: "Varela Round", sans-serif;
 }
 
+/* index.html */
 .header {
     margin-bottom: 30px;
     padding-bottom: 10px;
-    background: #000000;
-    box-shadow: 0px 7px 10px #777777;
     text-align: center;
+    background: #000000;
+    box-shadow: 0 7px 10px #777777;
     font-size: 3.5em;
 }
 
@@ -24,10 +25,22 @@ body {
     font-size: .3em;
 }
 
+
+/* views/inbox.html */
 .title {
-    color: #ff0000;
     text-align: center;
+    color: #ff0000;
     text-shadow: 1px 1px 1px #333333;
-    font-weight: 900;
     font-size: 2.5em;
+    font-weight: 900;
+}
+
+
+/* js/directives/templates/inbox.html */
+.inbox_count p {
+    text-align: center;
+}
+
+input[name='search_box'] {
+    margin-left: 25px;
 }
