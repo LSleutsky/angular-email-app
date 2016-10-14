@@ -4,6 +4,7 @@ angular
     .module('EmailClient', ['ngRoute'])
     .config(function($routeProvider) {
         'use strict';
+        
         // setup routes for rendering templates
         $routeProvider
             .when('/inbox', {
