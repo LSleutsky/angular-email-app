@@ -42,6 +42,12 @@ body {
     text-align: center;
 }
 
+.inbox_count span {
+    color: #0000ff;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
 input[name='search_box'] {
     margin-left: 25px;
 }
