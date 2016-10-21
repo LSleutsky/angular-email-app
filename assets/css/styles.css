@@ -26,6 +26,17 @@ body {
     font-size: .3em;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: #888888;
+}
+
 
 /* views/inbox.html */
 .title {
