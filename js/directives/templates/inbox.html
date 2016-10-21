@@ -1,12 +1,12 @@
 <div class="inbox">
-        <!-- how many emails in inbox-->
-        <div class="inbox_count">
-            <p>You currently have <span>{{inbox.container.length}}</span> inbox messages</p>
-        </div>
-        <!-- this will be the search bar container -->
-        <div class="search_bar">
-            <!-- if there are any messages in the inbox -->
-            <div ng-show="inbox.container.length > 0">
+    <!-- how many emails in inbox-->
+    <div class="inbox_count">
+        <p>You currently have <span>{{inbox.container.length}}</span> inbox messages</p>
+    </div>
+    <!-- this will be the search bar container -->
+    <div class="search_bar">
+        <!-- if there are any messages in the inbox -->
+        <div ng-show="inbox.container.length > 0">
             <!-- show the search bar to search thru messages -->
             <input type="text" name="search_box" class="search_box" placeholder="Search by sender..." ng-model="inbox.search">
         </div>
