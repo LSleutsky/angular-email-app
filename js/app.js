@@ -27,5 +27,5 @@
 
 // copyright info added to bottom of index.html - outside of angular scope
 var currentYear = new Date().getFullYear();
-var fullYear = document.getElementById('copyright');
-fullYear.innerHTML = currentYear;
+var showYear = document.getElementById('copyright');
+showYear.innerHTML = currentYear;
