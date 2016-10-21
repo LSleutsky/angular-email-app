@@ -4,8 +4,8 @@
     
     angular
       .module('EmailClient')
-      .controller('EmailCtrl', function EmailCtrl() {
+      .controller('EmailCtrl', [function EmailCtrl() {
         
-      });    
+      }]);    
     
 })();

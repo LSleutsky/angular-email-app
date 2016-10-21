@@ -13,14 +13,29 @@
                 scope: true,
                 templateUrl: 'js/directives/templates/inbox.html',
                 controller: function(InboxFactory) {
-                    this.messages = [];
+                    this.container = [];
                     InboxFactory.getEmails()
                         .then(angular.bind(this, function then() {
-                            this.messages = InboxFactory.messages;
+                            this.container = InboxFactory.container;
                         }));
+
+                    // var holder = {};
+                    // holder.messages = [];
+                    // 
+                    // holder.getEmails = function() {
+                    //     // when response is obtained
+                    //     $http.get('json/emails.json')
+                    //         .success(function(response) {
+                    //             // add response data to messages array
+                    //             holder.messages = response;
+                    //         })
+                    //         .error(function(data, status) {
+                    //             $log.error(data, status);
+                    //         });
+                    // };
+                    // return holder;
                 },
-                controllerAs: inbox
-                
+                controllerAs: 'inbox'
             };
         });
     

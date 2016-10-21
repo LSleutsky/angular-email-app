@@ -6,13 +6,12 @@ body {
 
 
 /* index.html */
-
 .header {
     margin-bottom: 30px;
     padding-bottom: 10px;
+    text-align: center;
     background: #000000;
     box-shadow: 0 7px 10px #777777;
-    text-align: center;
     font-size: 3.5em;
 }
 
@@ -29,18 +28,16 @@ body {
 
 
 /* views/inbox.html */
-
 .title {
-    color: #ff0000;
     text-align: center;
+    color: #ff0000;
     text-shadow: 1px 1px 1px #333333;
-    font-weight: 900;
     font-size: 2.5em;
+    font-weight: 900;
 }
 
 
 /* js/directives/templates/inbox.html */
-
 .inbox_count p {
     text-align: center;
 }

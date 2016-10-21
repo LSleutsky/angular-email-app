@@ -4,21 +4,40 @@
     
     angular
         .module('EmailClient')
-        .factory('InboxFactory', function InboxFactory($q, $http) {
+        .factory('InboxFactory', ['$http', '$log', '$q', function InboxFactory($http, $log, $q) {
             'use strict';
 
-            var externals = {};
-            externals.messages = [];
+            var messages = {};
+            messages.container = [];
 
-            externals.getEmails = function() {
+            // messages.getEmails = function() {
+            //     // when response is obtained
+            //     return $http.get('json/emails.json')
+            //         .success(function(response) {
+            //             // add response data to messages array
+            //             messages.container = response;
+            //         })
+            //         .error(function(data, status) {
+            //             $log.error(data, status);
+            //         });
+            // };
+            messages.getEmails = function() {
+                var defer = $q.defer();
                 // when response is obtained
                 return $http.get('json/emails.json')
-                    .then(function(response) {
+                    .success(function(response) {
                         // add response data to messages array
-                        externals.messages = response.data;
+                        messages.container = response;
+                        defer.resolve(response);
+                    })
+                    .error(function(data, status) {
+                        $log.error(data, status);
+                        defer.reject(data);
                     });
-            };
-            return externals;
-        });
+                return defer.promise;
+            }; 
+            
+            return messages;
+        }]);
     
 })();
