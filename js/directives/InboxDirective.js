@@ -8,32 +8,24 @@
             'use strict';
             
             return {
-                restrict: 'EA',
+                restrict: 'E',
                 replace: true,
                 scope: true,
                 templateUrl: 'js/directives/templates/inbox.html',
                 controller: function(InboxFactory) {
+                    // empty container to hold incoming back-end data
                     this.container = [];
+                    
                     InboxFactory.getEmails()
-                        .then(angular.bind(this, function then() {
+                        // if data is properly retrieved
+                        .success(angular.bind(this, function() {
+                            // bind the data to the above container
                             this.container = InboxFactory.container;
-                        }));
-
-                    // var holder = {};
-                    // holder.messages = [];
-                    // 
-                    // holder.getEmails = function() {
-                    //     // when response is obtained
-                    //     $http.get('json/emails.json')
-                    //         .success(function(response) {
-                    //             // add response data to messages array
-                    //             holder.messages = response;
-                    //         })
-                    //         .error(function(data, status) {
-                    //             $log.error(data, status);
-                    //         });
-                    // };
-                    // return holder;
+                        }))
+                        .error(function(data, status) {
+                            // log any errors to the console
+                            console.log(data, status);
+                        });
                 },
                 controllerAs: 'inbox'
             };
