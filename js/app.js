@@ -12,8 +12,7 @@
                 .when('/inbox', {
                     // main inbox view
                     templateUrl: 'views/inbox.html',
-                    controller: 'InboxCtrl',
-                    controllerAs: 'inbox'
+                    controller: 'InboxCtrl'
                 })
                 .otherwise({
                     // always redirect to main inbox view unless target url is available
