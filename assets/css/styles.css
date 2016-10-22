@@ -1,10 +1,9 @@
 /* custom font: 'Varela Round', sans-serif */
 
 body {
-    font-family: 'Varela Round', sans-serif;
     background-image: url('../img/email.jpg');
+    font-family: 'Varela Round', sans-serif;
 }
-
 
 /* index.html */
 .header {
@@ -39,7 +38,6 @@ footer p {
     color: #888888;
 }
 
-
 /* views/inbox.html */
 .title {
     text-align: center;
@@ -48,7 +46,6 @@ footer p {
     font-size: 2.5em;
     font-weight: 900;
 }
-
 
 /* js/directives/templates/inbox.html */
 .inbox_count p {
